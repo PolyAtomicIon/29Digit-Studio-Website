@@ -21,7 +21,6 @@
     "core-js": "3.9.1",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.8",
-    "tailwindcss": "2.0.4",
     "vue": "3.0.7",
     "vue-router": "4.0.5"
   },
@@ -31,10 +30,11 @@
     "@vue/cli-plugin-babel": "5.0.0-alpha.7",
     "@vue/cli-plugin-eslint": "5.0.0-alpha.7",
     "@vue/cli-service": "5.0.0-alpha.7",
-    "autoprefixer": "10.2.5",
+    "autoprefixer": "^10.2.6",
     "eslint": "7.22.0",
     "eslint-plugin-vue": "7.7.0",
-    "postcss": "8.2.8",
+    "postcss": "^8.3.0",
+    "tailwindcss": "^2.1.4",
     "vue-template-compiler": "2.6.12"
   },
   "eslintConfig": {
