@@ -20,7 +20,7 @@
 
         <div class="container relative mx-auto mt-8">
           <div class="items-center flex justify-between ">
-            <div class="w-full md:w-6/12 px-4 text-left">
+            <div class="w-full md:w-6/12 pl-5 pr-4 text-left">
               <div class="pr-12">
                 <h1 class="text-white font-semibold text-5xl">
                   Try out<br>
@@ -225,72 +225,36 @@
       </section>
       
       <section class="relative pb-20 bg-indigo-600 pt-20">
-        <div class="container mx-auto px-4">
+        <div class="w-full container-fluid mx-auto">
 
-          <div class="flex flex-wrap items-center">
+          <div class="w-full flex flex-wrap items-center">
             <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
-              <div
-                class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white"
-              >
-                <i class="fas fa-user-friends text-xl text-indigo-600"></i>
-              </div>
-              <h3 class="text-3xl text-white mb-2 font-semibold leading-normal">
-                Working with us is a pleasure
-              </h3>
-              <p
-                class="text-lg font-light leading-relaxed mt-4 mb-4 text-white"
-              >
-                Don't let your uses guess by attaching tooltips and popoves to
-                any element. Just make sure you enable them first via
-                JavaScript.
-              </p>
-              <p
-                class="text-lg font-light leading-relaxed mt-0 mb-4 text-white"
-              >
-                The kit comes with three pre-built pages to help you get started
-                faster. You can change the text and images and you're good to
-                go. Just make sure you enable them first via JavaScript.
-              </p>
-              <router-link to="/" class="font-bold text-emerald-500 mt-8">
-                Check Vue Notus!
-              </router-link>
+              <h2 class="text-3xl text-white mb-2 font-semibold leading-normal">
+               Check out our projects
+              </h2>
+              
             </div>
 
-            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
-              <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-emerald-500"
-              >
-                <img
-                  alt="..."
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
-                  class="w-full align-middle rounded-t-lg"
-                />
-                <blockquote class="relative p-8 mb-4">
-                  <svg
-                    preserveAspectRatio="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 583 95"
-                    class="absolute left-0 w-full block h-95-px -top-94-px"
-                  >
-                    <polygon
-                      points="-30,95 583,95 583,65"
-                      class="text-emerald-500 fill-current"
-                    ></polygon>
-                  </svg>
-                  <h4 class="text-xl font-bold text-white">
-                    Top Notch Services
-                  </h4>
-                  <p class="text-md font-light mt-2 text-white">
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens.
-                  </p>
-                </blockquote>
-              </div>
+            <div class="overflow-x-auto w-full px-12 pl-16">
+              <ul class="flex items-center w-full py-8 gap-8">
+                <li class="px-3 md:px-4 bg-red-400 flex-none">
+                  <project-card></project-card>
+                </li>
+                <li class="px-3 md:px-4 bg-orange-500 flex-none">
+                  <project-card></project-card>
+                </li>
+                <li class="px-3 md:px-4 bg-emerald-400 flex-none">
+                  <project-card></project-card>
+                </li>
+              </ul>
             </div>
+
+            <!-- <project-card
+              v-for="i in 3"
+              :key="i"
+            /> -->
+
           </div>
-
-          
 
         </div>
       </section>
@@ -560,15 +524,12 @@
                 JavaScript.
               </p>
               <p
-                class="text-lg font-light leading-relaxed mt-0 mb-4 text-white"
+                class="text-lg font-light leading-relaxed mt-0 mb-6 text-white"
               >
                 The kit comes with three pre-built pages to help you get started
                 faster. You can change the text and images and you're good to
                 go. Just make sure you enable them first via JavaScript.
               </p>
-              <router-link to="/" class="font-bold text-emerald-500 mt-8">
-                Check Vue Notus!
-              </router-link>
             </div>
 
             <div class="w-full lg:w-6/12 px-4">
@@ -646,6 +607,7 @@
 <script>
 import Navbar from "@/components/Navbars/AuthNavbar.vue";
 import FooterComponent from "@/components/Footers/Footer.vue";
+import ProjectCard from '../components/Cards/ProjectCard.vue';
 
 import patternVue from "@/assets/img/hero_img.png";
 import logoImg from "@/assets/img/logo.png";
@@ -669,6 +631,7 @@ export default {
   components: {
     Navbar,
     FooterComponent,
+    ProjectCard
   },
 };
 </script>
