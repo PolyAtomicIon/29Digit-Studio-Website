@@ -67,7 +67,7 @@
 
       </div>
 
-      <section class="relative pt-24 pb-16">
+      <section id="about" class="relative pt-24 pb-16">
         <div class="container mx-auto px-4 ">
           <div class="items-center flex flex-wrap ">
             <div class="w-full md:w-4/12 ml-auto mr-auto px-4 ">
@@ -171,7 +171,7 @@
         </div>
       </section>
       
-      <section class="relative bg-white pt-8">
+      <section id="projects" class="relative bg-white pt-8">
 
         <div class="w-full container-fluid mx-auto">
 
@@ -196,7 +196,7 @@
         </div>
       </section>
 
-      <section class="relative pt-20 pb-48">
+      <section id="members" class="relative pt-20 pb-48">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap justify-center text-center mb-6">
             <div class="w-full lg:w-6/12 px-4">
