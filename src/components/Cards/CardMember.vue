@@ -1,25 +1,32 @@
 <template>
   <div class="w-full mx-auto md:w-6/12 mb-8">
-    <div class="relative w-full">
+    <div class="relative w-full" @click="$router.push('/profile')">
       
       <img
         alt="..."
-        :src="img"
-        class="main-item shadow-lg rounded-full mx-auto max-w-120-px"
+        :src="cover_img"
+        class="main-item object-cover shadow-lg rounded-full mx-auto w-120-px h-120-px"
       />
       
+      <!-- <div 
+        class="main-item rounded-lg max-w-120 mx-auto"
+        :style=" 'background-img:' + cover_img +  "
+      >
+
+      </div> -->
+
       <div class="bg-white rounded-lg shadow-2xl absolute w-28 max-w-screen p-4 text-center hide">
         <h5 class="text-xl font-bold"> {{ NameAndSurname }} </h5>
         <p
           class=" text-sm text-blueGray-400 uppercase font-semibold"
         >
-          {{ jobPosition }}
+          {{ job_position }}
         </p>
 
         <hr class="my-4">
 
         <p class="text-sm pb-20">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, magni consectetur. Cum nam dicta fuga ex voluptatibus eius ratione quibusdam tempore aperiam. Odio, minima! Esse ut sed recusandae adipisci culpa?
+          {{ description }}
         </p>
 
         <!-- <div class="mt-6">
@@ -61,7 +68,7 @@ export default {
     };
   },
   props: {
-    img: {
+    cover_img: {
       default: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png'
     },
     name: {
@@ -70,7 +77,10 @@ export default {
     surname: {
       default: 'ipsum'
     },
-    jobPosition: {
+    description: {
+      default: 'lorem ipsum dolor sit amet'
+    },
+    job_position: {
       default: 'lorem ipsum'
     } 
   },

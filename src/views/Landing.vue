@@ -190,7 +190,9 @@
 
         <div class="w-full container-fluid mx-auto">
 
-          <div class="w-full flex flex-wrap items-center">
+          <project-card-list></project-card-list>
+
+          <!-- <div class="w-full flex flex-wrap items-center">
 
             <div class="overflow-x-auto scrollbar w-full lg:px-10 py-6">
 
@@ -204,12 +206,7 @@
               </ul>
             </div>
 
-            <!-- <project-card
-              v-for="i in 3"
-              :key="i"
-            /> -->
-
-          </div>
+          </div> -->
 
         </div>
       </section>
@@ -227,124 +224,7 @@
             </div>
           </div>
 
-          <div class="w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-3">
-
-            <card-member></card-member>
-            <card-member></card-member>
-            <card-member></card-member>
-            <card-member></card-member>
-            <card-member></card-member>
-            <card-member></card-member>
-            <card-member></card-member>
-            <card-member></card-member>
-
-            <!-- <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  alt="..."
-                  :src="team1"
-                  class="shadow-lg rounded-full mx-auto max-w-120-px"
-                />
-                <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Ryan Tompson</h5>
-                  <p
-                    class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
-                  >
-                    Web Developer
-                  </p>
-                  <div class="mt-6">
-                    <button
-                      class="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-twitter"></i>
-                    </button>
-                    <button
-                      class="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-facebook-f"></i>
-                    </button>
-                    <button
-                      class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-dribbble"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  alt="..."
-                  :src="team2"
-                  class="shadow-lg rounded-full mx-auto max-w-120-px"
-                />
-                <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Romina Hadid</h5>
-                  <p
-                    class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
-                  >
-                    Marketing Specialist
-                  </p>
-                  <div class="mt-6">
-                    <button
-                      class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-google"></i>
-                    </button>
-                    <button
-                      class="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-facebook-f"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  alt="..."
-                  :src="team3"
-                  class="shadow-lg rounded-full mx-auto max-w-120-px"
-                />
-                <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Alexa Smith</h5>
-                  <p
-                    class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
-                  >
-                    UI/UX Designer
-                  </p>
-                  <div class="mt-6">
-                    <button
-                      class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-google"></i>
-                    </button>
-                    <button
-                      class="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-twitter"></i>
-                    </button>
-                    <button
-                      class="bg-blueGray-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-instagram"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-
-          </div>
+          <member-card-list></member-card-list>
           
           
         <div
@@ -531,8 +411,8 @@
 <script>
 import Navbar from "@/components/Navbars/AuthNavbar.vue";
 import FooterComponent from "@/components/Footers/Footer.vue";
-import ProjectCard from '../components/Cards/ProjectCard.vue';
-import CardMember from '../components/Cards/CardMember.vue';
+import ProjectCardList from '../components/Collections/ProjectCardList.vue';
+import MemberCardList from '../components/Collections/MemberCardList.vue';
 
 import patternVue from "@/assets/img/hero_img.png";
 import logoImg from "@/assets/img/logo.png";
@@ -556,8 +436,8 @@ export default {
   components: {
     Navbar,
     FooterComponent,
-    ProjectCard,
-    CardMember
+    ProjectCardList,
+    MemberCardList
   },
 };
 </script>

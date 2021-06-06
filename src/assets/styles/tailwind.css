@@ -2581,6 +2581,14 @@ select {
   max-width: 120px;
 }
 
+.w-120-px {
+  width: 120px;
+}
+
+.h-120-px {
+  height: 120px;
+}
+
 .max-w-150-px {
   max-width: 150px;
 }

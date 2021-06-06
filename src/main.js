@@ -94,4 +94,6 @@ const router = createRouter({
   routes,
 });
 
-createApp(App).use(router).mount("#app");
+const axios = require('axios')
+
+createApp(App).use(router, axios).mount("#app");
