@@ -30,6 +30,14 @@
 <script>
     import CardMember from '../Cards/CardMember.vue';
     // import axios from 'axios'
+    import avatar1 from '../../assets/img/avatars/1.jpg'
+    import avatar2 from '../../assets/img/avatars/2.jpg'
+    import avatar3 from '../../assets/img/avatars/3.jpg'
+    import avatar4 from '../../assets/img/avatars/4.jpg'
+    import avatar5 from '../../assets/img/avatars/5.jpg'
+    import avatar6 from '../../assets/img/avatars/6.jpg'
+    import avatar7 from '../../assets/img/avatars/7.jpg'
+    import avatar8 from '../../assets/img/avatars/8.jpg'
 
     export default {
         data () {
@@ -40,56 +48,56 @@
                         'surname': 'Yernat',
                         'description': 'I am interested in software development, entertainment, and education. Have experience in development of games, web apps, and managing teams.',
                         'job_position': 'Senior UI/UX designer',
-                        "cover_img": './avatars/1.jpg'
+                        "cover_img": avatar1
                     },
                     {
                         'name': 'Bekzat',
                         'surname': 'Yernat',
                         'description': 'I am interested in software development, entertainment, and education. Have experience in development of games, web apps, and managing teams.',
                         'job_position': 'Project Manager',
-                        "cover_img": './avatars/2.jpg'
+                        "cover_img": avatar2
                     },
                     {
                         'name': 'Bekzat',
                         'surname': 'Yernat',
                         'description': 'I am interested in software development, entertainment, and education. Have experience in development of games, web apps, and managing teams.',
                         'job_position': 'Junior Unity Developer',
-                        "cover_img": './avatars/3.jpg'
+                        "cover_img": avatar3
                     },
                     {
                         'name': 'Bekzat',
                         'surname': 'Yernat',
                         'description': 'I am interested in software development, entertainment, and education. Have experience in development of games, web apps, and managing teams.',
                         'job_position': 'Senior Unity Developer',
-                        "cover_img": './avatars/4.jpg'
+                        "cover_img": avatar4
                     },
                     {
                         'name': 'Bekzat',
                         'surname': 'Yernat',
                         'description': 'I am interested in software development, entertainment, and education. Have experience in development of games, web apps, and managing teams.',
                         'job_position': 'Marketing Manager',
-                        "cover_img": './avatars/5.jpg'
+                        "cover_img": avatar5
                     },
                     {
                         'name': 'Bekzat',
                         'surname': 'Yernat',
                         'description': 'I am interested in software development, entertainment, and education. Have experience in development of games, web apps, and managing teams.',
                         'job_position': 'Pixel artist',
-                        "cover_img": './avatars/6.jpg'
+                        "cover_img": avatar6
                     },
                     {
                         'name': 'Bekzat',
                         'surname': 'Yernat',
                         'description': 'I am interested in software development, entertainment, and education. Have experience in development of games, web apps, and managing teams.',
                         'job_position': '3d Artist & Animator',
-                        "cover_img": './avatars/7.jpg'
+                        "cover_img": avatar7
                     },
                     {
                         'name': 'Bekzat',
                         'surname': 'Yernat',
                         'description': 'I am interested in software development, entertainment, and education. Have experience in development of games, web apps, and managing teams.',
                         'job_position': 'Monetization Manager',
-                        "cover_img": './avatars/8.jpg'
+                        "cover_img": avatar8
                     },
                 ],
                 
