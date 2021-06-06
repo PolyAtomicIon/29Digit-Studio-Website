@@ -68,7 +68,7 @@
 
       </div>
 
-      <section class="relative pt-24 pb-6">
+      <section class="relative pt-24 pb-16">
         <div class="container mx-auto px-4 ">
           <div class="items-center flex flex-wrap ">
             <div class="w-full md:w-4/12 ml-auto mr-auto px-4 ">
@@ -78,7 +78,7 @@
                 :src="logoImg"
               />
             </div>
-            <div class="w-full md:w-5/12 ml-auto mr-auto px-4 pt-6">
+            <div class="w-full md:w-5/12 ml-auto mr-auto px-4 pt-12">
               <div class="md:pr-12">
                 <div
                   class="text-emerald-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-emerald-300"
@@ -90,81 +90,29 @@
                   <span class="text-indigo-600 font-semibold">29Digit</span> is Gamedev studio a team of young creative professionals and enthusiasts 
                   that develop games and interactive solutions. 
                 </p>
-                <!-- <p class="mt-4 text-2xl font-semibold">
-                  We focus on three main things:
-                </p> -->
-                <!-- <ul class="list-none mt-1 ">
-                  <li class="py-2">
-                    <div class="flex items-center">
-                      <div>
-                        <span
-                          class="text-sm font-semibold inline-block py-1 px-2 uppercase rounded-full text-emerald-600 bg-emerald-200 mr-3"
-                        >
-                          <i class="fas fa-brain"></i>
-                        </span>
-                      </div>
-                      <div>
-                        <h4 class="text-blueGray-500">
-                          Innovation
-                        </h4>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="py-2">
-                    <div class="flex items-center">
-                      <div>
-                        <span
-                          class="text-sm font-semibold inline-block py-1 px-2 uppercase rounded-full text-emerald-600 bg-emerald-200 mr-3"
-                        >
-                          <i class="fas fa-pen-nib"></i>
-                        </span>
-                      </div>
-                      <div>
-                        <h4 class="text-blueGray-500">
-                          Education
-                        </h4>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="py-2">
-                    <div class="flex items-center">
-                      <div>
-                        <span
-                          class="text-sm font-semibold inline-block py-1 px-2 uppercase rounded-full text-emerald-600 bg-emerald-200 mr-3"
-                        >
-                          <i class="fas fa-gamepad"></i>
-                        </span>
-                      </div>
-                      <div>
-                        <h4 class="text-blueGray-500">Entertainment</h4>
-                      </div>
-                    </div>
-                  </li>
-                </ul> -->
               </div>
             </div>
           </div>
 
-
-        <div
-          class="bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-48 h-500-px"
-          style="transform: translateZ(0);"
-        >
-          <svg
-            class="absolute bottom-0 overflow-hidden"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            version="1.1"
-            viewBox="0 0 2560 700"
-            x="0"
-            y="0"
+          <div
+            class="bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-48 h-500-px"
+            style="transform: translateZ(0);"
           >
-            <polygon
-              class="text-indigo-600 fill-current"
-              points="2560 0 2560 700 -1850 1000 "
-            ></polygon>
-          </svg>
-        </div>
+            <svg
+              class="absolute bottom-0 overflow-hidden "
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              version="1.1"
+              viewBox="0 0 2560 700"
+              x="0"
+              y="0"
+            >
+              <polygon
+                class="text-indigo-600 fill-current"
+                points="2560 0 2560 700 -2560 350"
+              ></polygon>
+            </svg>
+          </div>
 
           <div class="lg:mt-20 mt-16 flex flex-wrap">
             <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
@@ -173,7 +121,7 @@
               >
                 <div class="px-4 py-5 flex-auto">
                   <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400"
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-indigo-600"
                   >
                     <i class="fas fa-award"></i>
                   </div>
@@ -191,7 +139,7 @@
               >
                 <div class="px-4 py-5 flex-auto">
                   <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-indigo-500"
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-indigo-600"
                   >
                     <i class="fas fa-pen-nib"></i>
                   </div>
@@ -209,7 +157,7 @@
               >
                 <div class="px-4 py-5 flex-auto">
                   <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400"
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-indigo-600"
                   >
                     <i class="fas fa-gamepad"></i>
                   </div>
@@ -224,26 +172,33 @@
         </div>
       </section>
       
-      <section class="relative pb-20 bg-indigo-600 pt-20">
+      <section class="relative bg-white pt-8">
+
+        <div class="container mx-auto ">
+         <div class="w-full flex justify-between items-center mb-4 px-4">
+            <h2 class="text-3xl font-semibold leading-normal">
+              Our projects
+            </h2>
+            
+            <router-view>
+                <a href="" class="text-emerald-500 text-lg font-semibold">
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+            </router-view>
+          </div>
+        </div>
+
         <div class="w-full container-fluid mx-auto">
 
           <div class="w-full flex flex-wrap items-center">
-            <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
-              <h2 class="text-3xl text-white mb-2 font-semibold leading-normal">
-               Check out our projects
-              </h2>
-              
-            </div>
 
-            <div class="overflow-x-auto w-full px-12 pl-16">
-              <ul class="flex items-center w-full py-8 gap-8">
-                <li class="px-3 md:px-4 bg-red-400 flex-none">
-                  <project-card></project-card>
-                </li>
-                <li class="px-3 md:px-4 bg-orange-500 flex-none">
-                  <project-card></project-card>
-                </li>
-                <li class="px-3 md:px-4 bg-emerald-400 flex-none">
+            <div class="overflow-x-auto scrollbar w-full lg:px-10 py-6">
+
+              <ul class="pl-5 flex items-center w-full gap-3">
+                <li 
+                  v-for="i in 5"
+                  :key="i"
+                  class="px-1 md:px-2 flex-none">
                   <project-card></project-card>
                 </li>
               </ul>
@@ -261,7 +216,7 @@
 
       <section class="relative pt-20 pb-48">
         <div class="container mx-auto px-4">
-          <div class="flex flex-wrap justify-center text-center mb-24">
+          <div class="flex flex-wrap justify-center text-center mb-6">
             <div class="w-full lg:w-6/12 px-4">
               <h2 class="text-4xl font-semibold">Here are our heroes</h2>
               <p class="text-lg leading-relaxed m-4 text-blueGray-500">
@@ -271,8 +226,19 @@
               </p>
             </div>
           </div>
-          <div class="flex flex-wrap">
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+
+          <div class="w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-3">
+
+            <card-member></card-member>
+            <card-member></card-member>
+            <card-member></card-member>
+            <card-member></card-member>
+            <card-member></card-member>
+            <card-member></card-member>
+            <card-member></card-member>
+            <card-member></card-member>
+
+            <!-- <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
               <div class="px-6">
                 <img
                   alt="..."
@@ -376,50 +342,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  alt="..."
-                  :src="team4"
-                  class="shadow-lg rounded-full mx-auto max-w-120-px"
-                />
-                <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Jenna Kardi</h5>
-                  <p
-                    class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
-                  >
-                    Founder and CEO
-                  </p>
-                  <div class="mt-6">
-                    <button
-                      class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-dribbble"></i>
-                    </button>
-                    <button
-                      class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-google"></i>
-                    </button>
-                    <button
-                      class="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-twitter"></i>
-                    </button>
-                    <button
-                      class="bg-blueGray-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-instagram"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </div> -->
+
           </div>
           
           
@@ -608,6 +532,7 @@
 import Navbar from "@/components/Navbars/AuthNavbar.vue";
 import FooterComponent from "@/components/Footers/Footer.vue";
 import ProjectCard from '../components/Cards/ProjectCard.vue';
+import CardMember from '../components/Cards/CardMember.vue';
 
 import patternVue from "@/assets/img/hero_img.png";
 import logoImg from "@/assets/img/logo.png";
@@ -631,7 +556,33 @@ export default {
   components: {
     Navbar,
     FooterComponent,
-    ProjectCard
+    ProjectCard,
+    CardMember
   },
 };
 </script>
+
+<style scoped>
+
+  .scrollbar::-webkit-scrollbar-track
+  {
+    /* -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+    background-color: #FFF; */
+    border: none;
+  }
+
+  .scrollbar::-webkit-scrollbar
+  {
+    height: 2px;
+    width: 10px;
+    background-color: #FFF;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb
+  {
+    /* background-color: #1abc86; */
+    background-color: indigo;
+    /* border: 2px; */
+  }
+
+</style>

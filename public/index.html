@@ -31,8 +31,26 @@
     <title>
       Vue Notus by Creative Tim | Free and Open Source UI Kit
     </title>
+    <style>
+       .scrollbar::-webkit-scrollbar-track
+      {
+        border: none;
+      }
+
+      .scrollbar::-webkit-scrollbar
+      {
+        height: 2px;
+        width: 2px;
+        background-color: #FFF;
+      }
+
+      .scrollbar::-webkit-scrollbar-thumb
+      {
+        background-color: indigo;
+      }
+    </style>
   </head>
-  <body class="text-blueGray-700 antialiased">
+  <body class="text-blueGray-700 antialiased scrollbar">
     <noscript>
       <strong
         >We're sorry but vue-notus doesn't work properly without JavaScript

@@ -1,33 +1,24 @@
 <template>
   <div
-    class="relative w-300-px flex flex-col min-w-0 break-words bg-white mb-6 shadow-xl rounded-lg mt-16"
+    class="relative w-300-px flex flex-col min-w-0 break-words bg-white p-1 mb-6 -xl rounded-lg"
   >
     <div class="">
-      <div class="w-full flex flex-wrap justify-center">
-          
-        <div class="w-full px-4 ">
-          <div class="relative">
-            <img
-              alt="..."
-              :src="team3"
-              class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 max-w-150-px"
-            />
+      <div class="w-full flex flex-wrap justify-center  ">
+        <div class="w-full rounded ">
+          <div class="flex justify-center text-center ">
+            <iframe class="rounded-lg" width="100%" height="200" src="https://www.youtube.com/embed/JbI50w1IsYs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          
-          <div class="ml-auto w-10/12 px-6 py-3">
-              <h4 class="font-semibold inline px-4 text-lg">Lorem ipsum dolor sit amet  </h4>
-              <router-view>
-                  <a href="" class="text-emerald font-semibold">
-                      <i class="fas fa-external-link-alt"></i>
-                  </a>
-              </router-view>
-          </div>
-        </div>
-        <div class="w-full mt-2 rounded bg-red-400">
-          <div class="flex justify-center text-center pt-8 pb-2 px-4">
-
-            <iframe class="rounded-lg" width="560" height="245" src="https://www.youtube.com/embed/JbI50w1IsYs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+          <div class="flex justify-between pt-2">
+              <img :src="team3" class="h-16 w-16 rounded-lg mr-2" alt="">
+              <div class=" px-2 py-2 w-full flex flex-col justify-between">
+                <h4 class="font-semibold text-md">Lorem ipsum dolor sit amet  </h4>
+                <router-view>
+                    <a href="" class="text-emerald-500 text-sm font-semibold">
+                        Open
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </router-view>
+              </div>
           </div>
         </div>
       </div>
