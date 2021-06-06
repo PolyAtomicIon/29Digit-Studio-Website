@@ -3,18 +3,30 @@
 
         <div class="overflow-x-auto scrollbar w-full lg:px-10 py-6">
 
+            <div class="w-full flex justify-between items-center mb-4 px-6 lg:px-10">
+                <h2 class="text-3xl font-semibold leading-normal">
+                Our projects
+                </h2>
+                
+                <router-view>
+                    <a href="" class="text-emerald-500 text-lg font-semibold">
+                    <i class="fas fa-arrow-right"></i>
+                    </a>
+                </router-view>
+            </div>
+
             <ul class="pl-5 flex items-center w-full gap-3">
-            <li 
-                v-for="project in projects"
-                :key="project.id"
-                class="px-1 md:px-2 flex-none">
-                <project-card
-                    :title="project.title"
-                    :url="project.url"
-                    :cover_img="project.cover_url"
-                    :video_url="project_videos[project.id]"
-                />
-            </li>
+                <li 
+                    v-for="project in projects"
+                    :key="project.id"
+                    class="px-1 md:px-2 flex-none">
+                    <project-card
+                        :title="project.title"
+                        :url="project.url"
+                        :cover_img="project.cover_url"
+                        :video_url="project_videos[project.id]"
+                    />
+                </li>
             </ul>
         </div>
 

@@ -79,8 +79,10 @@ const routes = [
     component: Landing,
   },
   {
+    name: 'profile',
     path: "/profile",
     component: Profile,
+    props: true
   },
   {
     path: "/",

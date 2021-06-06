@@ -6,7 +6,7 @@
         <div
           class="absolute top-0 w-full h-full bg-center bg-cover"
           style="
-            background-image: url('https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80');
+            background-image: url('https://wallpaperaccess.com/full/1092587.jpg');
           "
         >
           <span
@@ -47,12 +47,12 @@
                   <div class="relative">
                     <img
                       alt="..."
-                      :src="team2"
-                      class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
+                      :src="cover_img"
+                      class="shadow-xl rounded-full h-150-px align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px object-cover"
                     />
                   </div>
                 </div>
-                <div
+                <!-- <div
                   class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center"
                 >
                   <div class="py-6 px-3 mt-32 sm:mt-0">
@@ -91,23 +91,23 @@
                       <span class="text-sm text-blueGray-400">Comments</span>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
-              <div class="text-center mt-12">
+              <div class="text-center mt-24">
                 <h3
                   class="text-4xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2"
                 >
-                  Jenna Stones
+                  {{ NameAndSurname }}
                 </h3>
                 <div
                   class="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase"
                 >
                   <i
-                    class="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"
+                    class="fas fa-sliders-h mr-2 text-lg text-blueGray-400"
                   ></i>
-                  Los Angeles, California
+                  {{ job_position }}
                 </div>
-                <div class="mb-2 text-blueGray-600 mt-10">
+                <!-- <div class="mb-2 text-blueGray-600 mt-10">
                   <i
                     class="fas fa-briefcase mr-2 text-lg text-blueGray-400"
                   ></i>
@@ -118,7 +118,7 @@
                     class="fas fa-university mr-2 text-lg text-blueGray-400"
                   ></i>
                   University of Computer Science
-                </div>
+                </div> -->
               </div>
               <div class="mt-10 py-10 border-t border-blueGray-200 text-center">
                 <div class="flex flex-wrap justify-center">
@@ -130,17 +130,21 @@
                       warm, intimate feel with a solid groove structure. An
                       artist of considerable range.
                     </p>
-                    <a
+                    <!-- <a
                       href="javascript:void(0)"
                       class="font-normal text-emerald-500"
                     >
                       Show more
-                    </a>
+                    </a> -->
                   </div>
                 </div>
               </div>
+              <project-card-list></project-card-list>
+
             </div>
           </div>
+
+
         </div>
       </section>
     </main>
@@ -150,18 +154,39 @@
 <script>
 import Navbar from "@/components/Navbars/AuthNavbar.vue";
 import FooterComponent from "@/components/Footers/Footer.vue";
-
-import team2 from "@/assets/img/team-2-800x800.jpg";
+import ProjectCardList from "@/components/Collections/ProjectCardList.vue";
 
 export default {
   data() {
     return {
-      team2,
     };
+  },
+  props: {
+    cover_img: {
+      default: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png'
+    },
+    name: {
+      default: 'lorem'
+    },
+    surname: {
+      default: 'ipsum'
+    },
+    description: {
+      default: 'lorem ipsum dolor sit amet'
+    },
+    job_position: {
+      default: 'lorem ipsum'
+    } 
+  },
+  computed: {
+    NameAndSurname(){
+      return this.name + ' ' + this.surname;
+    },
   },
   components: {
     Navbar,
     FooterComponent,
+    ProjectCardList,
   },
 };
 </script>

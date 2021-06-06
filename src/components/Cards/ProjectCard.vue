@@ -10,7 +10,7 @@
             <iframe class="rounded-lg" width="100%" height="200" :src="video_url" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="flex justify-between pt-2">
-              <img :src="cover_img" class="h-16 w-16 rounded-lg mr-2" alt="">
+              <img :src="cover_img" class="h-16 w-16 object-cover rounded-lg mr-2" alt="">
               <div class=" px-2 py-2 w-full flex flex-col justify-between">
                 <h4 class="font-semibold text-md"> {{ title }}  </h4>
                 <router-view>

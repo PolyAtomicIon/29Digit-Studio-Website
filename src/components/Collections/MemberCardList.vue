@@ -9,6 +9,17 @@
             :cover_img="member.cover_img"
             :description="member.description"
             :job_position="member.job_position"
+            @open-profile="$router.push({
+                name: 'profile',
+                params: {
+                    'name': member.name,
+                    'surname': member.surname,
+                    'description': member.description,
+                    'job_position': member.job_position,
+                    'cover_img': member.cover_img
+                }
+            }
+            )"
         >
 
         </card-member>

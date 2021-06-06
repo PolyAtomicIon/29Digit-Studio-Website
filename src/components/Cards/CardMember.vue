@@ -1,19 +1,12 @@
 <template>
   <div class="w-full mx-auto md:w-6/12 mb-8">
-    <div class="relative w-full" @click="$router.push('/profile')">
+    <div class="relative w-full" @click="$emit('open-profile')">
       
       <img
         alt="..."
         :src="cover_img"
         class="main-item object-cover shadow-lg rounded-full mx-auto w-120-px h-120-px"
       />
-      
-      <!-- <div 
-        class="main-item rounded-lg max-w-120 mx-auto"
-        :style=" 'background-img:' + cover_img +  "
-      >
-
-      </div> -->
 
       <div class="bg-white rounded-lg shadow-2xl absolute w-28 max-w-screen p-4 text-center hide">
         <h5 class="text-xl font-bold"> {{ NameAndSurname }} </h5>
@@ -87,7 +80,7 @@ export default {
   computed: {
     NameAndSurname(){
       return this.name + ' ' + this.surname;
-    }
+    },
   }
 };
 </script>

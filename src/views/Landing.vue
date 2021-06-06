@@ -174,20 +174,6 @@
       
       <section class="relative bg-white pt-8">
 
-        <div class="container mx-auto ">
-         <div class="w-full flex justify-between items-center mb-4 px-4">
-            <h2 class="text-3xl font-semibold leading-normal">
-              Our projects
-            </h2>
-            
-            <router-view>
-                <a href="" class="text-emerald-500 text-lg font-semibold">
-                  <i class="fas fa-arrow-right"></i>
-                </a>
-            </router-view>
-          </div>
-        </div>
-
         <div class="w-full container-fluid mx-auto">
 
           <project-card-list></project-card-list>
