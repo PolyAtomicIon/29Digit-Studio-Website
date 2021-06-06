@@ -12,7 +12,7 @@
           class="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase "
           to="/"
         >
-          29 Digit Studio
+          29Digit Studio
         </router-link>
         <button
           class="cursor-pointer text-xl leading-none px-3 py-1 bg-transparent block lg:hidden outline-none focus:outline-none"
