@@ -6,7 +6,6 @@
       <div class="w-full flex flex-wrap justify-center  ">
         <div class="w-full rounded ">
           <div class="flex justify-center text-center ">
-            <!-- <img :src="cover_img" alt=""> -->
             <iframe class="rounded-lg" width="100%" height="200" :src="video_url" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="flex justify-between pt-2">

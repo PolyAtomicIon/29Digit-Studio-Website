@@ -27,9 +27,8 @@
                   next gen games!
                 </h1>
                 <p class="mt-5 py-4 text-sm text-blueGray-100">
-                  This is a simple example of a Landing Page you can build using
-                  Vue Notus. It features multiple CSS components based on the
-                  Tailwind CSS design system.
+                  We develop astonishing interactive solutions for businesses.
+                  We are the leading studio working on games, AR / VR solutions and 3d websites.
                 </p>
                 <button
                   class="bg-emerald-500 text-white flex justify-between align-middle items-center active:bg-emerald-600 text-xs font-bold uppercase px-12 py-2 mt-4 rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150"
@@ -64,7 +63,7 @@
           </svg>
         </div>
 
-        <img class="h-75-screen hidden md:block absolute top-3 right-0 lg:right-8" src="@/assets/img/hero_img.png" alt="">
+        <img class="h-75-screen hidden md:block absolute top-3 right-0 lg:right-8" src="@/assets/img/hero_idle.gif" alt="">
 
       </div>
 
